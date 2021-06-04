@@ -41,9 +41,35 @@ namespace TP5
         public static void Punto2()
         {
             int numeroA, numeroB;
+            float resultado;
+            string operador;
 
+            Console.WriteLine("ingrese la operacion siguiendo el siguiente orden: numero, enter operador, enter numero");
 
-            
+            numeroA = Convert.ToInt32(Console.ReadLine());
+            operador = Console.ReadLine();
+            numeroB = Convert.ToInt32(Console.ReadLine());
+
+            switch (operador)
+            {
+                case "+":
+                    resultado = numeroA + numeroB;
+                    Console.WriteLine(resultado);
+                    break;
+                case "-":
+                    resultado = numeroA - numeroB;
+                    Console.WriteLine(resultado);
+                    break;
+                case "*":
+                    resultado = numeroA * numeroB;
+                    Console.WriteLine(resultado);
+                    break;
+                case "/":
+                    resultado = numeroA / numeroB;
+                    Console.WriteLine(resultado);
+                    break;
+            }
+
         }
         public static void Punto3()
         {
