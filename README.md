@@ -1,4 +1,4 @@
-##Ejercicio 4## 
+##Ejercicio 4
 **¿String es una tipo por valor o un tipo por referencia?**
 
 String es un tipo por referencia que se almacenan siempre en el heap, y lo que se pasa a una función
