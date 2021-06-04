@@ -73,7 +73,46 @@ namespace TP5
         }
         public static void Punto3()
         {
+            double numero,resultado;
+            string operador;
 
+            Console.WriteLine("Ingrese un numero");
+
+            numero= Convert.ToDouble(Console.ReadLine());
+            
+
+            Console.WriteLine("ingrese la opcion que busca: \n1)valorabsoluto \n2)cuadrado \n3)raiz cuadrada \n4)seno \n5)coseno \n6)entero de un flotante");
+
+            operador = Console.ReadLine();
+
+            switch (operador)
+            {
+                case "1":
+                    resultado = Math.Abs(numero);
+                    Console.WriteLine(resultado);
+                    break;
+                case "2":
+                    resultado = Math.Pow(numero, 2);
+                    Console.WriteLine(resultado);
+                    break;
+                case "3":
+
+                    resultado = Math.Sqrt(numero);
+                    Console.WriteLine(resultado);
+                    break;
+                case "4":
+                    resultado = Math.Sin(numero);
+                    Console.WriteLine(resultado);
+                    break;
+                case "5":
+                    resultado = Math.Cos(numero);
+                    Console.WriteLine(resultado);
+                    break;
+                case "6":
+                    resultado = Math.Round(numero);
+                    Console.WriteLine(resultado);
+                    break;
+            }
         }
     }
 
